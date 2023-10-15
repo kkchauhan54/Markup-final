@@ -2,6 +2,8 @@
 /* Styling for the main container */
 .dashboard-container {
   padding: 10px;
+  overflow: scroll;
+  height: 70vh;
 }
 
 /* Styling for the image cards (on the right) */
@@ -19,14 +21,68 @@
 /* Custom classes for different grid sizes */
 .grid-3 {
   width: calc(33.33% - 38px) !important; /* 33.33% width for 3 cards in a row */
+   .imagecard-content{
+    padding: 25px 15px 10px;
+  }
+  .imagecard-title{
+    font-size: 25px;
+  }
+  .imagecard-time{
+    font-size: 20px;
+  }
+  .share-popup-send-button{
+    padding: 10px 15px;
+    margin: 0px 15px;
+    font-size: 20px;
+  }
+  .imagecard-button{
+    padding: 8px 15px;
+    font-size: 20px;
+  }
 }
 
 .grid-6{
   width: calc(16.66% - 38px) !important; /* 16.66% width for 6 cards in a row */
+  .imagecard-content{
+    padding: 5px 10px;
+  }
+  .imagecard-title{
+    margin-bottom: 5px;
+  }
+  .imagecard-time{
+    margin-bottom: 5px;
+  }
+  .share-popup-send-button{
+    padding: 5px 10px;
+    margin: 0px 5px;
+  }
+  .imagecard-button{
+    padding: 5px 10px;
+  }
 }
 
 .grid-9{
   width: calc(11.11% - 38px) !important; /* 11.11% width for 9 cards in a row */
+  .imagecard-content{
+    padding: 5px 10px;
+  }
+  .imagecard-title{
+    margin-bottom: 2.5px;
+    font-size: 12px;
+  }
+  .imagecard-time{
+    margin-bottom:2.5px;
+    font-size: 10px;
+  }
+  .share-popup-send-button{
+    padding: 2.5px 5px;
+    margin: 0px 2.5px;
+    font-size: 10px;
+  }
+  .imagecard-button{
+    padding: 2.5px 5px;
+    font-size: 10px;
+  }
 }
 
 

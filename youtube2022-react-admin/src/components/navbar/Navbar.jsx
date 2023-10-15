@@ -21,6 +21,9 @@ const Navbar = ({ logged }) => {
    localStorage.removeItem('token');
    navigate('/login');
   };
+  const gotoprofile =()=>{
+    navigate('/profile')
+  }
   return (
     <div className="item">
       <div className="dropdown_menu">
@@ -36,8 +39,10 @@ const Navbar = ({ logged }) => {
           <div class="drop_menu">
             <button id="userButton">User</button>
             <div class="dropdown-content">
-              <button>Your Profile</button>
-              <button id="signOutButton" onClick={handleLogout}>Sign Out</button>
+              <button onClick={gotoprofile}>Your Profile</button>
+              <button id="signOutButton" onClick={handleLogout}>
+                Sign Out
+              </button>
             </div>
           </div>
         )}

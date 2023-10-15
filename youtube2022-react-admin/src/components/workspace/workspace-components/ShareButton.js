@@ -45,7 +45,7 @@ class ShareButton extends Component {
                     type="email"
                     placeholder="Add email"
                   />
-                  <button className="share-popup-send-button">Send</button>
+                  <button className="share-popup-button">Send</button>
                 </div>
               </div>
               <div className="share-bottom">
@@ -65,7 +65,7 @@ class ShareButton extends Component {
                     type="email"
                     placeholder="Copy the link"
                   />
-                  <button className="share-popup-send-button">Copy</button>
+                  <button className="share-popup-button">Copy</button>
                 </div>
               </div>
             </div>

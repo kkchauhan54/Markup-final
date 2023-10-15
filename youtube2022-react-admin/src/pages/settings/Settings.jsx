@@ -9,10 +9,8 @@ const Settings = () => {
     <div className="home">
       <Sidebar />
       <div className="homeContainer">
-
-        <div className="navbar"><Navbar /></div>
-        <div className="workspace"> <Settingstab /></div>
-        
+        <Navbar/>
+        <Settingstab/>
       </div>
     </div>
   )

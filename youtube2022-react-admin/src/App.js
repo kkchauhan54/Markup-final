@@ -4,12 +4,14 @@ import Team from "./pages/Team/Team";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import Settings from "./pages/settings/Settings";
+import Profile from './pages/profile/Profile'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { productInputs, userInputs } from "./formSource";
 import "./style/dark.scss";
 import { useContext, createContext, useState } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import Signup from "./pages/signup/Signup";
+import ForgetPass from "./pages/forget-pass/ForgetPass";
 import ImageComments from "./components/ImageComments/ImageComments";
 import Newt from "./pages/Newt/Newt";
 
@@ -20,8 +22,8 @@ function App() {
   const [logged, setLogged] = useState(false);
   const [currentImg, setCurrentImg] = useState("");
   return (
-    <MyContext.Provider value={{currentImg, setCurrentImg}}>
-      <div className={darkMode ? "app dark" : "app"}>
+    <MyContext.Provider value={{ currentImg, setCurrentImg }}>
+      <div className={darkMode ? 'app dark' : 'app'}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home logged={logged} />} />
@@ -32,7 +34,9 @@ function App() {
             <Route path="ImageComments" element={<ImageComments />} />
             <Route path="newimage" element={<Newt />} />
             <Route path="settings" element={<Settings />} />
+            <Route path="profile" element={<Profile />} />
             <Route path="signup" element={<Signup />} />
+            <Route path="forget-pass" element={<ForgetPass />} />
             <Route path="users">
               <Route index element={<Team />} />
               <Route path=":userId" element={<Single />} />
@@ -53,7 +57,7 @@ function App() {
         </BrowserRouter>
       </div>
     </MyContext.Provider>
-  );
+  )
 }
 
 export default App;
